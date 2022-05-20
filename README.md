@@ -13,4 +13,6 @@ data:
 
 ```bash
 ffmpeg -framerate 10 -i %d_rgb.jpg -c:v libx264 -vf fps=24 -pix_fmt yuv420p out.mp4
+# or gif
+ffmpeg -framerate 10 -i %d_rgb.jpg -loop -1 out.gif
 ```
